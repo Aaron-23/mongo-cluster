@@ -101,6 +101,7 @@ VOLUME /data/db /data/configdb
 COPY etc /etc
 COPY docker-entrypoint.sh /usr/local/bin/
 COPY mongo.sql /
+COPY mongod /
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat (3.4)
 ENTRYPOINT ["docker-entrypoint.sh"]
 
