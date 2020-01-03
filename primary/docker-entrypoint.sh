@@ -1,6 +1,6 @@
 #!/bin/bash
 
-[[ $DEBUG ]] && set -x 
+set -e
 
 if [ "${1:0:1}" = '-' ]; then
 	set -- mongod "$@"
@@ -18,6 +18,5 @@ if [ "$1" = 'mongod' ]; then
 		set -- $numa "$@"
 	fi
 fi
-
 
 exec "$@"
