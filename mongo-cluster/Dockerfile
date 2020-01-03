@@ -1,7 +1,7 @@
-FROM mongodb:3.4.23
+FROM mongodb:4.0.14
 
 ENV MONGO_MAJOR 3.4
-ENV MONGO_VERSION 3.4.23
+ENV MONGO_VERSION 4.0.14
 
 RUN set -x \
 	&& apt-get update \
