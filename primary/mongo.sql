@@ -7,5 +7,6 @@ cfg = {
     { _id: 3, host: 'HOSTNAME:POD_IP' }
   ]
 };
+
 cfg.protocolVersion = 1;
 rs.reconfig(cfg, { force: true });
