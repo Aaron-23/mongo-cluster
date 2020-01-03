@@ -1,2 +1,0 @@
-export CONFIG_FILE=/etc/mongod.conf
-export DELIMITER=": "

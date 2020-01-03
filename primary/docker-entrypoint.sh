@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e
+[[ $DEBUG ]] && set -x 
 
 if [ "${1:0:1}" = '-' ]; then
 	set -- mongod "$@"
